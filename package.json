@@ -1,7 +1,7 @@
 {
-  "name": "@thicapistrano/sum-operation",
+  "name": "@thicapistrano/math-operations",
   "version": "1.0.0",
-  "description": "sum-operation",
+  "description": "math-operations",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thicapistrano/sum-operation.git"
+    "url": "git+https://github.com/thicapistrano/math-operations.git"
   },
   "keywords": [],
   "author": "Thiago Capistrano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thicapistrano/sum-operation/issues"
+    "url": "https://github.com/thicapistrano/math-operations/issues"
   },
   "jest": {
     "preset": "ts-jest",
@@ -30,7 +30,7 @@
   "files": [
     "lib/**/*"
   ],
-  "homepage": "https://github.com/thicapistrano/sum-operation#readme",
+  "homepage": "https://github.com/thicapistrano/math-operations#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
