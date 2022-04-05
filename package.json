@@ -4,18 +4,32 @@
   "description": "sum-operation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "prepublish": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thicapistrano/sum-operation.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Thiago Capistrano",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/thicapistrano/sum-operation/issues"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "lib"
+    ]
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "homepage": "https://github.com/thicapistrano/sum-operation#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
